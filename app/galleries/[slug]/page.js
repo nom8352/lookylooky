@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return galleryCategories.map((gallery) => ({ slug: gallery.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const gallery = galleryCategories.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const gallery = galleryCategories.find((item) => item.slug === slug);
   if (!gallery) {
     return {};
   }
@@ -18,8 +19,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function GalleryDetailPage({ params }) {
-  const gallery = galleryCategories.find((item) => item.slug === params.slug);
+export default async function GalleryDetailPage({ params }) {
+  const { slug } = await params;
+  const gallery = galleryCategories.find((item) => item.slug === slug);
 
   if (!gallery) {
     notFound();
