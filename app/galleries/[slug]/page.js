@@ -38,16 +38,23 @@ export default async function GalleryDetailPage({ params }) {
       />
 
       <section className="container section-gap">
-        <div className="content-card prose-block">
+        <div className="content-card prose-block gallery-intro-card">
+          <h2 className="caption-header">{gallery.title}</h2>
           <p>{gallery.longDescription}</p>
+          <p className="gallery-counter">Original gallery images: {gallery.images.length}</p>
         </div>
       </section>
 
       <section className="container section-gap">
-        <div className="masonry-grid">
+        <div className="wall-grid">
           {gallery.images.map((image, index) => (
-            <figure key={image.src + index} className="masonry-item">
-              <img src={image.src} alt={image.alt} />
+            <figure key={image.src + index} className="wall-entry">
+              <a className="wall-thumbnail" href={image.href ?? image.src} target="_blank" rel="noreferrer">
+                <img src={image.src} alt={image.alt} />
+                <span className="wall-mask">
+                  <span className="wall-mask-icon">+</span>
+                </span>
+              </a>
             </figure>
           ))}
         </div>

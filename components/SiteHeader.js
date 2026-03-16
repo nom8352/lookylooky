@@ -3,7 +3,23 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { galleryCategories, primaryNav } from "../data/siteData";
+import { primaryNav } from "../data/siteData";
+
+function NavLink({ item, className, onClick }) {
+  if (item.external) {
+    return (
+      <a href={item.href} className={className} onClick={onClick} target="_blank" rel="noreferrer">
+        {item.label}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={item.href} className={className} onClick={onClick}>
+      {item.label}
+    </Link>
+  );
+}
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -50,35 +66,38 @@ export function SiteHeader() {
         <div className="container nav-shell">
           <ul>
             {primaryNav.map((item) => {
-              const isActive = pathname === item.href;
+              const isInternalActive = !item.external && (pathname === item.href || pathname.startsWith(`${item.href}/`));
+              const isChildActive = item.children?.some(
+                (child) => !child.external && (pathname === child.href || pathname.startsWith(`${child.href}/`)),
+              );
+              const isActive = isInternalActive || isChildActive;
 
               return (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
+                <li key={item.label} className={item.children?.length ? "has-submenu" : undefined}>
+                  <NavLink
+                    item={item}
                     className={isActive ? "active" : ""}
                     onClick={() => setOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
+                  />
+                  {item.children?.length ? (
+                    <div className="submenu">
+                      {item.children.map((child) => {
+                        const childActive = !child.external && pathname === child.href;
+
+                        return (
+                          <NavLink
+                            key={`${item.label}-${child.label}`}
+                            item={child}
+                            className={childActive ? "active" : ""}
+                            onClick={() => setOpen(false)}
+                          />
+                        );
+                      })}
+                    </div>
+                  ) : null}
                 </li>
               );
             })}
-            <li className="has-submenu">
-              <span className={pathname.startsWith("/galleries/") ? "active" : ""}>Gallery</span>
-              <div className="submenu">
-                {galleryCategories.map((gallery) => (
-                  <Link
-                    key={gallery.slug}
-                    href={`/galleries/${gallery.slug}`}
-                    className={pathname === `/galleries/${gallery.slug}` ? "active" : ""}
-                    onClick={() => setOpen(false)}
-                  >
-                    {gallery.title}
-                  </Link>
-                ))}
-              </div>
-            </li>
           </ul>
         </div>
       </nav>

@@ -167,13 +167,14 @@ textarea {
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 30px;
+  gap: 22px;
   margin: 0;
   padding: 14px 0;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   font-size: 11px;
+  flex-wrap: wrap;
 }
 
 .nav-shell li {
@@ -210,11 +211,16 @@ textarea {
   border: 1px solid var(--line);
 }
 
+
+
 .has-submenu:hover .submenu {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, 0);
 }
+
+
+
 
 .page-hero {
   position: relative;
@@ -635,22 +641,77 @@ blockquote {
   border-radius: 20px;
 }
 
-.masonry-grid {
-  columns: 3 280px;
-  column-gap: 22px;
+.gallery-intro-card {
+  text-align: center;
 }
 
-.masonry-item {
-  break-inside: avoid;
-  margin: 0 0 22px;
-  border-radius: 24px;
+.gallery-counter {
+  margin-top: 14px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.wall-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.wall-entry {
+  margin: 0;
+}
+
+.wall-thumbnail {
+  position: relative;
+  display: block;
   overflow: hidden;
+  border-radius: 18px;
+  background: #eadbc8;
   box-shadow: var(--shadow);
-  background: rgba(255, 255, 255, 0.72);
 }
 
-.masonry-item img {
+.wall-thumbnail img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.wall-mask {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 54, 39, 0.36);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.wall-mask-icon {
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 253, 250, 0.75);
+  color: #fffdfa;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  background: rgba(255, 253, 250, 0.16);
+}
+
+.wall-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.wall-thumbnail:hover .wall-mask {
+  opacity: 1;
 }
 
 .site-footer {
@@ -746,9 +807,8 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
-  .nav-shell ul {
-    gap: 18px;
-    flex-wrap: wrap;
+  .wall-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -822,8 +882,8 @@ blockquote {
     gap: 18px;
   }
 
-  .masonry-grid {
-    columns: 1;
+  .wall-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .offers-tab-list {
