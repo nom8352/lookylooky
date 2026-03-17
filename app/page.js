@@ -38,7 +38,7 @@ export default function HomePage() {
         <div className="content-card prose-block">
           <h2>Newborn Photography to Capture the Special Moments of Life</h2>
           <p>
-            <a href="https://sweetlifephotography.com.au/">Newborn photography</a> is an art because your young baby is too young to understand instructions on the best poses or facial expressions. The key is to allow our newborn photography experts wait for the best moments that can be captured forever on film. Newborn photography is a fine art that is best left to our newborn photography Sydney experts.
+            Newborn photography is an art because your young baby is too young to understand instructions on the best poses or facial expressions. The key is to allow our <a href="https://sweetlifephotography.com.au/">newborn photography</a> experts wait for the best moments that can be captured forever on film. Newborn photography is a fine art that is best left to our newborn photography Sydney experts.
           </p>
         </div>
       </section>
@@ -64,9 +64,10 @@ export default function HomePage() {
           At Our Baby Photography Sydney Studio?
         </h2>
         <div className="two-column-copy">
-          {serviceHighlights.map((item) => (
-            <p key={item.slice(0, 30)}>{item}</p>
-          ))}
+          <p>{serviceHighlights[0]}</p>
+          <p>
+            We offer over 15 different themes as the perfect backdrop to creating your beautiful baby portraits and <Link href="/service-prices-sydney/family-photography-sydney">family photography</Link> moments, including simple yet colourful backgrounds, natural backdrops, and outdoor garden scenes. Our Baby Experts are experienced in <a href="https://sweetlifephotography.com.au/">newborn family photography</a> and <Link href="/service-prices-sydney/100-days-baby-photography-1-year-and-junior-sydney">baby photography</Link>. They&apos;ll be at your baby photo shoot to entertain your precious little one while you relax. During your photo session in Sydney we&apos;ll be able to capture plenty of adorable facial expressions that will forever be memorialized in your precious photographs.
+          </p>
         </div>
         <blockquote>
           "We also offer a range of costumes and props so you don&apos;t need to bring anything to the studio, unless it&apos;s your child&apos;s favourite toy. We have over 250 outfits for your little one to wear, and over 300 items for your kids to enjoy.."

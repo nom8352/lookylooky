@@ -19,7 +19,7 @@ export function SiteFooter() {
           <p>
             Capturing the beauty of life, from your pregnancy and moments with
             your newborn, to every precious year of life with your kids. Enjoy
-            the experience of a professional photo-shoot.
+            the experience of a professional photo-shoot. <Link href="/about-us">Read More..</Link>
           </p>
           <img className="qr-code" src="/assets/qr.gif" alt="QR code" />
         </section>

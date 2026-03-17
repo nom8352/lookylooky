@@ -33,14 +33,12 @@ export function SiteHeader() {
         </Link>
 
         <div className="header-actions">
-          <a
+          <iframe
             className="facebook-like"
-            href="https://www.facebook.com/lookylookystudio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Like on Facebook
-          </a>
+            src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flookylookystudio&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21"
+            scrolling="no"
+            title="Facebook like"
+          />
           <a
             className="naver-link"
             href="http://cafe.naver.com/lookylooky"

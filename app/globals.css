@@ -126,13 +126,20 @@ textarea {
 
 .facebook-like,
 .naver-link {
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
-  font-size: 12px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.78);
   border-radius: 999px;
-  padding: 8px 14px;
   box-shadow: var(--shadow);
+}
+
+.facebook-like {
+  width: 118px;
+  height: 37px;
+  overflow: hidden;
+}
+
+.naver-link {
+  padding: 8px 14px;
 }
 
 .naver-link img {
@@ -1211,3 +1218,4 @@ blockquote {
   text-transform: uppercase;
   font-size: 12px;
 }
+
