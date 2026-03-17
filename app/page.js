@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="content-card prose-block">
           <h2>Newborn Photography to Capture the Special Moments of Life</h2>
           <p>
-            Newborn photography is an art because your young baby is too young to understand instructions on the best poses or facial expressions. The key is to allow our newborn photography experts wait for the best moments that can be captured forever on film. Newborn photography is a fine art that is best left to our newborn photography Sydney experts.
+            <a href="https://sweetlifephotography.com.au/">Newborn photography</a> is an art because your young baby is too young to understand instructions on the best poses or facial expressions. The key is to allow our newborn photography experts wait for the best moments that can be captured forever on film. Newborn photography is a fine art that is best left to our newborn photography Sydney experts.
           </p>
         </div>
       </section>
