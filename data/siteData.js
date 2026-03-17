@@ -94,7 +94,7 @@ export const serviceHighlights = [
 export const homeFaqs = [
   {
     question: 'Have You Been Searching for the Best Newborn Photography in Sydney?',
-    answer: ['We\'re a maternity, baby, and family photography studio located in Sydney region and nearby areas.'],
+    answer: ["We're a maternity, baby, and family photography studio located in Sydney region and nearby areas."],
   },
   {
     question: 'Where Is Our Newborn Baby Maternity & Family Photography Sydney Studio Located?',
@@ -105,21 +105,23 @@ export const homeFaqs = [
   {
     question: 'Photography Tips for Parents in Sydney',
     answer: [
-      'The best time for newborn baby photography is 7 to 20 days after birth because babies at this age are sleepier, curl naturally, and are easier to pose safely for those soft newborn portraits.',
-      'For many newborn sessions, babies are photographed without clothing so their tiny details can be captured beautifully. Depending on the climate and the set-up, wraps, blankets, and carefully prepared props can also be used to keep them comfortable.',
-      'Please listen carefully to your photographer during the session. Safety is always the first priority in newborn photography, and simple guidance on supporting, soothing, or moving your baby can make a big difference.',
-      'Our studio is prepared in advance with professional equipment, cameras, memory cards, lenses, bean bags, clamps, and heaters so that everything is ready before your baby arrives.',
-      'If you are planning your newborn baby photography Sydney session and would like to know more, we\'d love to hear from you!',
+      "If you're interested in hiring our maternity and newborn photography studio in Sydney, it's important to prepare for your upcoming newborn photography photo session. Our photography experts at LookyLooky in Sydney have a few tips to help your family prepare.",
+      "The best photography time for babies is just 7 to 20 days after birth, when babies spend most of their time sleeping, just like being in their mother's womb. After birth, it takes about three weeks before your baby starts moving, which makes it much harder for our newborn family photographers to snap photos of their cutest curl-up poses.",
+      "Most newborn baby portrait sessions are done unclothed, though it depends on the current climate, as babies can react against the wrong temperature. If you choose to have your infant photographed in clothing for newborn photography, it's best to select clothing that they're most comfortable wearing.",
+      "During your newborn family photo shoot you'll need to listen to the LookyLooky photographer for safety tips. Do keep your baby comfortable, and keep an eye on their reflexes during the session. In order for the best photographs to be taken, the atmosphere around your child always needs to be comfortable.",
+      'The best positions and poses will need to be taken by your professional baby photographer. Your photographer will ask you which position your baby feels most relaxed in.',
+      'At LookyLooky photography studio, we always have our studio prepped for your arrival, including all equipment, cameras, memory cards, lenses, bean bags, clamps, and a space heater.',
+      "LookyLooky offers newborn photography services to ensure your family's memories are cherished forever. If you would like to chat about creating a gorgeous portfolio of images that capture the beauty of your life, and that of your loved ones, we'd love to hear from you!",
     ],
   },
   {
     question: 'Choose the Best Family Photography Studio in Sydney',
     answer: [
       'LOOKYLOOKY has the best family photography experts. To help prepare for your family photography session in Sydney, we offer the following tips to capture the best photos.',
-      'It\'s recommended that all family members be cheery during your family photo session. If your family is unhappy or not concentrating on the camera, even the best camera equipment won\'t improve the moment. Think of ways to liven up the atmosphere, as it\'s important that your family are happy and having fun, so the photographer can capture your family\'s best moments together. Facial expressions are everything and can help to add value to your treasured photographs.',
-      'The best time for your family photography session, in natural surroundings, is late evening about an hour before dusk. Don\'t worry about your kids being rambunctious. Let them make the funny noises, sing, or dance. Let them act out their natural instincts. Let the family assume natural positions that make them feel comfortable.',
-      'We pride ourselves on being the best family photography experts in Sydney. Our preferred method of shooting is in manual exposure mode. We stay up-to-date on the latest and best photography tools and equipment.',
-      'If you feel that it\'s time to capture your family\'s special moments on film, please contact LookyLooky family photography experts in Sydney today.',
+      "It's recommended that all family members be cheery during your family photo session. If your family is unhappy or not concentrating on the camera, even the best camera equipment won't improve the moment. Think of ways to liven up the atmosphere, as it's important that your family are happy and having fun, so the photographer can capture your family's best moments together. Facial expressions are everything and can help to add value to your treasured photographs.",
+      "The best time for your family photography session, in natural surroundings, is late evening about an hour before dusk. Don't worry about your kids being rambunctious. Let them make the funny noises, sing, or dance. Let them act out their natural instincts. Let the family assume natural positions that make them feel comfortable.",
+      "We pride ourselves on being the best family photography experts in Sydney. Our preferred method of shooting is in manual exposure mode. We stay up-to-date on the latest and best photography tools and equipment.",
+      "If you feel that it's time to capture your family's special moments on film, please contact LookyLooky family photography experts in Sydney today.",
     ],
   },
 ];
@@ -132,6 +134,7 @@ export const promotionalOffers = [
   {
     title: 'Free Maternity',
     image: '/assets/promo-1.jpg',
+    note: 'This event end for now',
   },
   {
     title: 'Vintage 100days Shooting',
@@ -140,12 +143,16 @@ export const promotionalOffers = [
   {
     title: 'Group Discount',
     image: '/assets/promo-3.jpg',
+    heading: 'When You book more than 5moms together!',
     points: [
-      'Gather moms and book session (shooting date doesn\'t have to be same day) https://www.lookylooky.com.au/contact-us/',
-      'Emaildetails babylookylooky@gmail.com',
+      'Gather moms and book session',
+      "(shooting date doesn't have to be same day)",
+      'https://www.lookylooky.com.au/contact-us/',
+      'Email details babylookylooky@gmail.com',
       'We will call you for confirmation (Deposite $50 required)',
     ],
-    subPoints: ['mom\'s name,baby\'s name', 'Contact number', 'the desired booking date,package'],
+    subPoints: ["mom's name,baby's name", 'Contact number', 'the desired booking date,package'],
+    benefit: 'discount for all members.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   },
 ];

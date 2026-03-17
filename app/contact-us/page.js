@@ -67,7 +67,11 @@ export default function ContactUsPage() {
             </label>
             <label>
               Please enter any two digits *
-              <input type="text" name="verification" placeholder="Example: 12" />
+              <input type="text" name="verification" />
+            </label>
+            <label>
+              This box is for spam protection - please leave it blank
+              <input type="text" name="spam_protection" />
             </label>
             <button type="button" className="button-link">
               Submit
