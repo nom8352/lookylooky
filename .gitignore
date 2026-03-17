@@ -7,3 +7,5 @@ origin/
 source-home.html
 source-pages/
 *.ps1
+.playwright*.js
+output/
