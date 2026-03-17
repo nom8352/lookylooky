@@ -37,8 +37,6 @@ export default function AboutUsPage() {
 
       <section className="container section-gap about-story">
         <div className="content-card prose-block center-copy about-intro-card">
-          <h1 className="caption-header">Lookylooky studio is....</h1>
-          <h2 className="subtitle-heading">Established in 2011</h2>
           <p>
             All about capturing the beauty of life, from your pregnancy and special moments with your newborn, to every precious year of life with your kids.Enjoy the experience of a professional photo-shoot with your loved ones and keep the memories to cherish forever.
           </p>

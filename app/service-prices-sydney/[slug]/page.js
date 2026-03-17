@@ -98,7 +98,6 @@ export default async function ServicePriceDetailPage({ params }) {
           {page.columns ? (
             <section className="container section-gap">
               <div className="content-card prose-block">
-                <h2 className="center-title">{page.heroTitle}</h2>
                 <div className="two-column-copy">
                   {page.columns.map((column, columnIndex) => (
                     <div key={columnIndex}>

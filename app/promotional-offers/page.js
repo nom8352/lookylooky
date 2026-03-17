@@ -19,9 +19,6 @@ export default function PromotionalOffersPage() {
 
       <section className="container section-gap">
         <div className="promotional-shell">
-          <div className="content-card promotional-intro">
-            <h1>Promotional Offers</h1>
-          </div>
           <OffersTabs items={promotionalOffers} />
         </div>
       </section>

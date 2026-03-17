@@ -40,7 +40,6 @@ export default async function GalleryDetailPage({ params }) {
 
       <section className="container section-gap">
         <div className="content-card prose-block gallery-intro-card">
-          <h2 className="caption-header">{gallery.title}</h2>
           <p>{gallery.longDescription}</p>
           <p className="gallery-counter">Original gallery images: {gallery.images.length}</p>
         </div>

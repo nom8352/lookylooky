@@ -38,7 +38,6 @@ export default function ContactUsPage() {
 
       <section className="container section-gap contact-layout">
         <div className="content-card prose-block">
-          <h2>Booking or Inquiry</h2>
           <form className="contact-form">
             <label>
               Name *

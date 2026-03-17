@@ -12,7 +12,6 @@ export default function TestimonyPage() {
 
       <section className="container section-gap">
         <div className="content-card prose-block">
-          <h1>Testimony</h1>
           <div className="testimony-list">
             {testimonies.map((item) => (
               <blockquote key={item}>{item}</blockquote>

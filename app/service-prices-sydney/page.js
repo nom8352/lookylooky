@@ -19,7 +19,6 @@ export default function ServicePricesIndexPage() {
 
       <section className="container section-gap">
         <div className="content-card prose-block center-copy">
-          <h1>Service &amp; Prices</h1>
           <p>
             Check out unique collection of Service &amp; Prices for the Photography.
             Prices includes GST. Frame can be altered charging with difference.

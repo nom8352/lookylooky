@@ -36,7 +36,6 @@ export default async function BlogDetailPage({ params }) {
       <section className="container section-gap blog-detail-shell">
         <article className="content-card blog-detail-card">
           <p className="blog-category">{post.category}</p>
-          <h1>{post.title}</h1>
           <p className="blog-meta">
             {post.date} by {post.author}
           </p>
