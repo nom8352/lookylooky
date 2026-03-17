@@ -28,19 +28,9 @@ export default function HomePage() {
       </section>
 
       <section className="container intro section-gap-lg">
-        <h1 className="script-heading">Your Baby&apos;s Smiles Can Last Forever</h1>
-        <p className="eyebrow">Natural Light Baby Photo Studio LOOKYLOOKY</p>
+        <h1 className="script-heading">Your Baby&apos;s Smiles Can Last Forever - Natural Light Baby Photo Studio LOOKYLOOKY</h1>
         <p className="lead">
-          We are dedicated professional photographers specializing in capturing
-          the precious moments of your baby&apos;s life from pregnancy, to birth,
-          and beyond. At LookyLooky Photography Studio Sydney, we consider it a
-          privilege and an honour to document those treasured early years.
-        </p>
-        <p className="lead">
-          We are committed to preserving the beauty of these moments through
-          photography, so that you can cherish the memories of your pregnancy,
-          your first moments with your newborn, and every wonderful milestone
-          over the years to come.
+          We are dedicated professional photographers specializing in capturing the precious moments of your baby&apos;s life from pregnancy, to birth, and beyond! At LookyLooky Photography Studio Sydney, we consider it a privilege and an honour to be granted a view of the exquisite and treasured early moments of your child&apos;s life. We are committed to documenting and preserving the beauty of these moments through photography, so that you can cherish the memories of your pregnancy, your first moments with your newborn, and every wonderful moment over the years to come!
         </p>
       </section>
 
@@ -51,15 +41,7 @@ export default function HomePage() {
         <div className="content-card prose-block">
           <h2>Newborn Photography to Capture the Special Moments of Life</h2>
           <p>
-            Newborn photography is an art because your young baby is too young
-            to understand instructions on the best poses or facial expressions.
-            The key is to wait for those natural moments that can be captured
-            forever on film.
-          </p>
-          <p>
-            Our newborn photography Sydney specialists guide each session with a
-            calm, child-friendly approach so the result still feels soft,
-            natural, and timeless.
+            Newborn photography is an art because your young baby is too young to understand instructions on the best poses or facial expressions. The key is to allow our newborn photography experts wait for the best moments that can be captured forever on film. Newborn photography is a fine art that is best left to our newborn photography Sydney experts.
           </p>
         </div>
       </section>
@@ -90,10 +72,7 @@ export default function HomePage() {
           ))}
         </div>
         <blockquote>
-          “We also offer a range of costumes and props so you don&apos;t need to
-          bring anything to the studio, unless it&apos;s your child&apos;s favourite
-          toy. We have over 250 outfits for your little one to wear, and over
-          300 items for your kids to enjoy.”
+          "We also offer a range of costumes and props so you don&apos;t need to bring anything to the studio, unless it&apos;s your child&apos;s favourite toy. We have over 250 outfits for your little one to wear, and over 300 items for your kids to enjoy.."
         </blockquote>
       </section>
 

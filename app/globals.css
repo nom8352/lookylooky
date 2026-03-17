@@ -578,6 +578,14 @@ blockquote {
   padding-left: 20px;
 }
 
+.offer-detail-grid li + li {
+  margin-top: 10px;
+}
+
+.offer-detail-grid li ul {
+  margin-top: 10px;
+}
+
 .contact-form {
   display: grid;
   gap: 16px;
@@ -602,6 +610,42 @@ blockquote {
   padding: 14px 16px;
   color: var(--text);
   text-transform: none;
+}
+
+.contact-fieldset {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.contact-fieldset legend {
+  padding: 0 6px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+}
+
+.contact-option {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px !important;
+}
+
+.contact-option input {
+  width: 16px;
+  height: 16px;
+  padding: 0;
 }
 
 .info-list {
@@ -888,6 +932,209 @@ blockquote {
 
   .offers-tab-list {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.price-links-grid,
+.price-cards-grid,
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.price-link-card,
+.blog-card,
+.price-section-card,
+.poster-card {
+  display: grid;
+  gap: 14px;
+}
+
+.price-link-card h2,
+.blog-card h2,
+.price-section-card h2,
+.price-card h3 {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.price-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.price-subnav a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.price-subnav a.active {
+  background: var(--accent-deep);
+  color: #fffdfa;
+}
+
+.price-note,
+.blog-meta,
+.blog-category {
+  color: var(--muted);
+}
+
+.price-cards-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.price-card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.price-card ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.price-amount {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 2rem;
+  color: var(--accent-deep);
+}
+
+.testimony-list {
+  display: grid;
+  gap: 18px;
+}
+
+.blog-category {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .price-links-grid,
+  .price-cards-grid,
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-card-image {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-card-image img {
+  width: 100%;
+  aspect-ratio: 1.4 / 1;
+  object-fit: cover;
+}
+
+.blog-detail-shell {
+  display: grid;
+  gap: 24px;
+}
+
+.blog-detail-card {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.blog-detail-card h1 {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.blog-detail-image,
+.blog-detail-gallery img,
+.price-media-card img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-detail-image img,
+.blog-detail-gallery img,
+.price-media-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-detail-image img {
+  max-height: 720px;
+}
+
+.blog-detail-copy {
+  display: grid;
+  gap: 16px;
+}
+
+.blog-detail-copy p {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.blog-detail-gallery,
+.price-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.blog-post-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.blog-post-nav-card {
+  display: grid;
+  gap: 8px;
+}
+
+.blog-post-nav-card span {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.blog-post-nav-card strong {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.blog-post-nav-card.align-right {
+  text-align: right;
+}
+
+.price-media-card {
+  padding: 18px;
+}
+
+@media (max-width: 1024px) {
+  .blog-detail-gallery,
+  .price-media-grid,
+  .blog-post-nav {
     grid-template-columns: 1fr;
   }
 }

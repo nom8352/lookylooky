@@ -13,7 +13,7 @@ export default function PromotionalOffersPage() {
         image="/assets/offer-special.jpg"
         alt="Promotional offers"
         title="Promotional Offers"
-        subtitle="Special event, free maternity, vintage 100 days, and group discount offers"
+        subtitle="Promotional Offers"
         compact
       />
 
@@ -21,7 +21,6 @@ export default function PromotionalOffersPage() {
         <div className="promotional-shell">
           <div className="content-card promotional-intro">
             <h1>Promotional Offers</h1>
-            <p>Original-inspired promotional tabs recreated from the source site.</p>
           </div>
           <OffersTabs items={promotionalOffers} />
         </div>

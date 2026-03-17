@@ -1,19 +1,5 @@
 import Link from "next/link";
-
-const blogLinks = [
-  {
-    href: "https://www.lookylooky.com.au/adrian-just-turned-100-days-old/",
-    label: "Adrian Just Turned 100 days old!",
-  },
-  {
-    href: "https://www.lookylooky.com.au/gangmins-baby-photos/",
-    label: "Gangmin's Baby Photos",
-  },
-  {
-    href: "https://www.lookylooky.com.au/baby-lyns-newborn-photos/",
-    label: "Baby Lyn's Newborn Photos",
-  },
-];
+import { recentBlogLinks } from "../data/contentPages";
 
 const footerImages = [
   "/assets/footer-1.jpg",
@@ -41,11 +27,9 @@ export function SiteFooter() {
         <section>
           <h3>Recent Blogs</h3>
           <ul className="footer-links">
-            {blogLinks.map((link) => (
+            {recentBlogLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} target="_blank" rel="noreferrer">
-                  {link.label}
-                </a>
+                <Link href={link.href}>{link.label}</Link>
               </li>
             ))}
           </ul>
@@ -92,7 +76,9 @@ export function SiteFooter() {
         <p>
           Newborn photography Sydney | Maternity photography Sydney | Baby
           photography Sydney | Family photography Sydney | Party photography
-          Sydney
+          Sydney | Baby photo product Sydney | Baby party decoration Sydney |
+          Baby hands and feet sculptures Sydney | Photo editing, photo retouching
+          Sydney | Photo studio rental Sydney Custom made movie Sydney
         </p>
         <p>Unit 22, 33-37 College st, Gladesville, NSW 2111, Australia</p>
         <Link href="/contact-us" className="button-link footer-cta">

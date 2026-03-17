@@ -36,7 +36,7 @@ export function OffersTabs({ items }) {
 
         {current.title === "Vintage 100days Shooting" ? (
           <div className="offer-single-image">
-            <h3>{current.title}</h3>
+            <h3>Vintage 100days Shooting</h3>
             <img src={current.image} alt={current.title} className="offer-poster" />
           </div>
         ) : null}
@@ -44,20 +44,32 @@ export function OffersTabs({ items }) {
         {current.title === "Group Discount" ? (
           <div className="offer-group-layout">
             <h3>Group Discount</h3>
-            <div className="offer-banner-note">Get 10% off. When you book more than 5 moms together.</div>
+            <div className="offer-banner-note">
+              <div>Get 10% off.</div>
+              <div>When You book more than 5moms together!</div>
+            </div>
             <div className="offer-detail-grid">
               <div>
                 <h4>How?</h4>
                 <ol>
-                  {current.points.map((point) => (
-                    <li key={point}>{point}</li>
+                  {current.points.map((point, index) => (
+                    <li key={point}>
+                      <span>{point}</span>
+                      {index === 1 && current.subPoints?.length ? (
+                        <ul>
+                          {current.subPoints.map((subPoint) => (
+                            <li key={subPoint}>{subPoint}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </li>
                   ))}
                 </ol>
               </div>
               <div>
                 <h4>What?</h4>
                 <ul>
-                  <li>Discount for all members.</li>
+                  <li>discount for all members.</li>
                 </ul>
                 <Link href={current.cta.href} className="button-link">
                   {current.cta.label}

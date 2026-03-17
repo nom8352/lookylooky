@@ -13,68 +13,68 @@ export const primaryNav = [
     label: 'Gallery',
     href: '/galleries/100-days-baby-photography',
     children: galleryCategories.map((gallery) => ({
-      label: gallery.title.replace(' Photography', ''),
+      label:
+        gallery.slug === 'maternity-photography'
+          ? 'Maternity'
+          : gallery.slug === 'newborn-photography-sydney'
+            ? 'Newborn'
+            : gallery.slug === 'babies-and-kids-photography'
+              ? 'Babies and Kids'
+              : gallery.slug === 'family-photography'
+                ? 'Family'
+                : gallery.slug === 'events-parties-photography'
+                  ? 'Events & Parties'
+                  : gallery.title,
       href: `/galleries/${gallery.slug}`,
     })),
   },
   {
     label: 'Prices',
-    href: 'https://www.lookylooky.com.au/service-prices-sydney/100-days-baby-photography-1-year-and-junior-sydney/',
-    external: true,
+    href: '/service-prices-sydney',
     children: [
       {
         label: 'Maternity and Newborn',
-        href: 'https://www.lookylooky.com.au/service-prices-sydney/maternity-and-newborn-photography-sydney/',
-        external: true,
+        href: '/service-prices-sydney/maternity-and-newborn-photography-sydney',
       },
       {
         label: '100 Days, 1 Year and Junior',
-        href: 'https://www.lookylooky.com.au/service-prices-sydney/100-days-baby-photography-1-year-and-junior-sydney/',
-        external: true,
+        href: '/service-prices-sydney/100-days-baby-photography-1-year-and-junior-sydney',
       },
       {
         label: '1 Year Growing',
-        href: 'https://www.lookylooky.com.au/service-prices-sydney/1-year-and-growing-from-maternity-photography-sydney/',
-        external: true,
+        href: '/service-prices-sydney/1-year-and-growing-from-maternity-photography-sydney',
       },
       {
         label: 'Family',
-        href: 'https://www.lookylooky.com.au/service-prices-sydney/family-photography-sydney/',
-        external: true,
+        href: '/service-prices-sydney/family-photography-sydney',
       },
       {
         label: 'Hands & Feet Sculptures',
-        href: 'https://www.lookylooky.com.au/service-prices-sydney/baby-hand-and-feet-sculptures-casting/',
-        external: true,
+        href: '/service-prices-sydney/baby-hand-and-feet-sculptures-casting',
       },
       {
         label: 'Child Care',
-        href: 'https://www.lookylooky.com.au/service-prices-sydney/child-care/',
-        external: true,
+        href: '/service-prices-sydney/child-care',
       },
     ],
   },
   {
     label: 'Testimony',
-    href: 'https://www.lookylooky.com.au/testimony/',
-    external: true,
+    href: '/testimony',
   },
   { label: 'Contact Us', href: '/contact-us' },
   { label: 'FAQ', href: '/faq-2' },
   {
     label: 'Blog',
-    href: 'https://www.lookylooky.com.au/blog/',
-    external: true,
+    href: '/blog',
     children: [
       {
         label: 'Blog',
-        href: 'https://www.lookylooky.com.au/blog/',
-        external: true,
+        href: '/blog',
       },
       {
         label: 'Road Closure',
-        href: 'https://www.lookylooky.com.au/road-closure/',
-        external: true,
+        href: '/road-closure',
       },
     ],
   },
@@ -87,32 +87,38 @@ export const promoCards = [
 ];
 
 export const serviceHighlights = [
-  'We are experts in newborn photography, and portraiture of mothers, young children and families. LookyLooky Photography Studio Sydney guarantees a wonderful experience in a comfortable and soothing environment.',
-  'We offer over 15 different themes as the perfect backdrop to creating your beautiful baby portraits and family photography moments, including simple colourful backgrounds, natural backdrops, and outdoor garden scenes.',
+  'We are experts in newborn photography, and portraiture of mothers, young children and families. LookyLooky Photography Studio Sydney guarantees a wonderful experience, in a comfortable and soothing environment, that will allow you to relax and sit back while we capture your family\'s special moments.',
+  'We offer over 15 different themes as the perfect backdrop to creating your beautiful baby portraits and family photography moments, including simple yet colourful backgrounds, natural backdrops, and outdoor garden scenes. Our Baby Experts are experienced in newborn family photography and baby photography. They\'ll be at your baby photo shoot to entertain your precious little one while you relax. During your photo session in Sydney we\'ll be able to capture plenty of adorable facial expressions that will forever be memorialized in your precious photographs.',
 ];
 
 export const homeFaqs = [
   {
     question: 'Have You Been Searching for the Best Newborn Photography in Sydney?',
-    answer: ['We are a maternity, baby, and family photography studio located in Sydney and nearby areas.'],
+    answer: ['We\'re a maternity, baby, and family photography studio located in Sydney region and nearby areas.'],
   },
   {
     question: 'Where Is Our Newborn Baby Maternity & Family Photography Sydney Studio Located?',
     answer: [
-      'We provide newborn baby photography and family photo shoot services for the suburban Sydney area including Gladesville, Hunters Hill, Putney, Ryde, Denistone, Marsfield, Lane Cove, Eastwood, Meadowbank, Macquarie Park, and Epping.',
+      'We provide newborn baby photography and family photo shoot services for the entire suburban Sydney area, including: Gladesville, Huntleys Cove, Huntleys Point, Hunters Hill, Henley, Tennyson Point, Putney, East, West and North Ryde, Denistone East and West, Marsfield, Lane Cove, Eastwood, Meadowbank, Macquarie Park, and Epping.',
     ],
   },
   {
     question: 'Photography Tips for Parents in Sydney',
     answer: [
-      'The best time for newborn photography is usually 7 to 20 days after birth when babies spend much of their time sleeping and curl naturally.',
-      'During your session, keep your baby comfortable and follow the photographer\'s safety guidance so we can capture the calmest and most natural poses.',
+      'The best time for newborn baby photography is 7 to 20 days after birth because babies at this age are sleepier, curl naturally, and are easier to pose safely for those soft newborn portraits.',
+      'For many newborn sessions, babies are photographed without clothing so their tiny details can be captured beautifully. Depending on the climate and the set-up, wraps, blankets, and carefully prepared props can also be used to keep them comfortable.',
+      'Please listen carefully to your photographer during the session. Safety is always the first priority in newborn photography, and simple guidance on supporting, soothing, or moving your baby can make a big difference.',
+      'Our studio is prepared in advance with professional equipment, cameras, memory cards, lenses, bean bags, clamps, and heaters so that everything is ready before your baby arrives.',
+      'If you are planning your newborn baby photography Sydney session and would like to know more, we\'d love to hear from you!',
     ],
   },
   {
     question: 'Choose the Best Family Photography Studio in Sydney',
     answer: [
-      'A cheerful and relaxed atmosphere helps us capture the best family portraits. Natural expressions, movement, and genuine interaction always photograph beautifully.',
+      'The best family photography happens when everybody feels relaxed and happy. We always recommend choosing a studio that knows how to keep young children comfortable so genuine smiles and natural expressions can be captured.',
+      'Natural light and the softer tones of late afternoon can create beautiful family portraits, especially when combined with a simple concept and styling that does not distract from your family.',
+      'Children do not need to stay still or pose perfectly for every image. Some of the best photographs happen when kids can be themselves and interact naturally with parents and siblings.',
+      'Our photographers use manual exposure and the latest photography tools to make sure your family photos are beautifully balanced, timeless, and full of warmth.',
     ],
   },
 ];
@@ -120,29 +126,25 @@ export const homeFaqs = [
 export const promotionalOffers = [
   {
     title: 'Special Event',
-    summary: 'A rotating seasonal promotion from the original page, presented as a full poster-style event notice.',
     image: '/assets/offer-special.jpg',
   },
   {
     title: 'Free Maternity',
-    summary: 'This event end for now.',
     image: '/assets/promo-1.jpg',
   },
   {
     title: 'Vintage 100days Shooting',
-    summary: 'A themed milestone session with a vintage-inspired styling direction for 100 days baby photography.',
     image: '/assets/offer-vintage.jpg',
   },
   {
     title: 'Group Discount',
-    summary: 'Get 10% off when you book more than 5 moms together.',
     image: '/assets/promo-3.jpg',
     points: [
-      'Gather moms and book a session. The shooting date does not have to be the same day.',
-      'Email babylookylooky@gmail.com with mom\'s name, baby\'s name, contact number, desired booking date, and package.',
-      'We will call you for confirmation. Deposit $50 required.',
-      'The discount applies to all members in the group booking.',
+      'Gather moms and book session (shooting date doesn\'t have to be same day) https://www.lookylooky.com.au/contact-us/',
+      'Emaildetails babylookylooky@gmail.com',
+      'We will call you for confirmation (Deposite $50 required)',
     ],
+    subPoints: ['mom\'s name,baby\'s name', 'Contact number', 'the desired booking date,package'],
     cta: { label: 'Contact Us', href: '/contact-us' },
   },
 ];
@@ -153,43 +155,39 @@ export const faqCategories = [
     items: [
       {
         question: 'Are you open on weekends?',
-        answer: ['Yes. We are open from 9 AM - 5 PM and closed on Wednesdays and Thursdays.'],
+        answer: ['Yes, We\'re open from 9AM - 5PM but, We are closed on Wednesdays and Thursdays.'],
       },
       {
         question: 'Do I need to pay a deposit?',
-        answer: ['Normally not, but a $50 deposit is required for promotional offers or special events.'],
+        answer: ['Normally not but, A $50 deposit is required for a promotional offer or event'],
       },
       {
         question: 'How can I make a booking? How early should I make a booking?',
         answer: [
-          'You can call 0425 874 690, email babylookylooky@gmail.com, or use the contact form on the website.',
-          'We recommend booking as early as possible so your preferred session date remains available.',
+          'You can call us over the phone at 0425 874 690 or send us an email to babylookylooky@gmail.com or fill out our booking form on our website www.lookylooky.com.au under the "Contact Us" tab. We recommend that you book a session as early as possible.',
         ],
       },
       {
         question: 'What if my baby is not in a good mood?',
         answer: [
-          'It helps if your baby is fed and rested before the shoot.',
-          'If your baby is still unsettled no matter how much we try, the session can be rescheduled.',
+          'It\'s best to feed your baby before your photo shoot or has already taken his/her nap. We will try our very best to cheer your baby up so we could get cute and beautiful shots. But if your baby is still not in a good mood no matter how much we try, we can always reschedule.',
         ],
       },
     ],
   },
   {
-    title: 'Shooting',
+    title: 'Delivery',
     items: [
       {
-        question: 'When is the good time for photo sessions for 100 days old and 1 year old?',
+        question: 'Can you deliver the products?',
         answer: [
-          'The best time for a 100-day photo session is when your baby has good head control.',
-          'For a 1-year session, we can usually start from around 10 months old when your baby can already stand with support.',
+          'We normally don\'t deliver products as most of our products are fragile. We recommend you pick them up at our studio once complete. However, for special cases, yes we can deliver',
         ],
       },
       {
-        question: 'When can I choose the concept and how many different concepts do you have?',
+        question: 'When can I get my pictures?',
         answer: [
-          'You can choose your concept on the shoot day and we recommend arriving on time.',
-          'The studio has more than 20 different concepts and can style the shoot with various props.',
+          'It takes 4~5 weeks for your images to be ready after your choice of photo. We will just inform you via text message that your order is ready for pick up.',
         ],
       },
     ],
@@ -199,58 +197,86 @@ export const faqCategories = [
     items: [
       {
         question: 'Can the concept per package be shared with the siblings?',
-        answer: ['Yes, it can be shared with siblings, but only for one concept per package.'],
+        answer: ['Yes, it can be shared with the siblings but only for 1 concept per package.'],
       },
       {
         question: 'We want to have a family photo shoot together with the baby, how do you do it?',
         answer: [
-          'Most baby packages already include one concept for family shots unless the package specifically says no family.',
-          'The remaining concepts are then used for baby-only photos unless you prefer otherwise.',
+          'Most of our baby packages (except the ones that has "no family" in it) already includes 1 concept for family shots. The remaining concepts are going to be just for your baby. Howeve, You can do the concept for baby as well if you do not want to family session as you are not ready.',
         ],
       },
       {
         question: 'We want to have a family photo shoot with the grandparents. Is that alright?',
-        answer: ['Family means parents and children only. Additional relatives are charged at $50 each.'],
+        answer: ['When we say family it means parents and childrens only. Any other family or relatives we charge extra $50 each person.'],
       },
       {
         question: 'What should I wear?',
-        answer: ['Wear anything comfortable, preferably without very strong colours or heavy patterns.'],
+        answer: ['You can wear anything you like as long as you\'re comfortable. Preferrably not too strong color or clothes with less patterns.'],
       },
     ],
   },
   {
-    title: 'Location, Pets, and Products',
+    title: 'Location',
     items: [
       {
         question: 'Do you provide dresses or costumes for the baby?',
-        answer: ['We have a collection of cute costumes. You are also welcome to bring special toys, blankets, hats, or outfits.'],
+        answer: ['We have a collection of cute costumes. Feel free to bring along any special toys, blankets, hats or costumes that you would like to use.'],
       },
       {
         question: 'Do you provide hair or makeup service?',
-        answer: ['No. Please do your hair and makeup before you come.'],
+        answer: ['No. Please do your hair and make up before you come.'],
       },
       {
-        question: 'Is there parking space at your studio? Is it easy to find your place?',
+        question: 'Is there parking space at your studio? Is easy to find your place?',
         answer: [
-          'Yes, there are many parking spaces next to the studio.',
-          'The studio is on the upper ground floor with stairs only, so it is best not to bring bulky prams.',
+          'Yes, there are many parking spaces next to our studio. Our studio is on the upper ground floor (no lift, only stairs), please don\'t carry any baby prams. It might be hard for you to go up.',
         ],
       },
+    ],
+  },
+  {
+    title: 'Pet',
+    items: [
       {
         question: 'I want to do a photo shoot with our dog. Can I bring my pet?',
         answer: [
-          'Yes, you can bring your pet for a short session.',
-          'Please bring a leash, kennel, or someone who can supervise your pet while the rest of the shoot continues.',
+          'Yes, you can bring your pet. Session time with pets would take about 5 minutes. We suggest you bring their leash, kennel or someone else who can look after your pet while you\'re doing your shoot. Our studio is in a commercial building so we don\'t have an area for them to stay unsupervised.',
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Product',
+    items: [
+      {
+        question: 'Can I change the frame to a different size or change it to a different one?',
+        answer: ['Yes, you can. There would be additional charge for alterations.'],
+      },
+      {
+        question: 'I don\'t need a hard copy of the pictures, can I choose to have a soft copy(digital files) of the pictures only?',
+        answer: ['Yes, you can have only digital files, however package is great value with soft copy.'],
+      },
+    ],
+  },
+  {
+    title: 'Shooting',
+    items: [
+      {
+        question: 'When is the good time for photo sessions for 100 days old and 1 year old?',
+        answer: [
+          'The best time to do a 100-day photo session is when your baby already has good head control. Most shots that we do at this age are in the tummy time position, sitting position (with support) and laying down.',
+          'For 1 year, we can already do the session when your baby is at least 10 months old. As long as he/she can already stand up with any support.',
         ],
       },
       {
-        question: 'Can you deliver the products?',
-        answer: ['Normally no because many products are fragile, but special-case delivery can sometimes be arranged.'],
-      },
-      {
-        question: 'When can I get my pictures?',
-        answer: ['It usually takes about 4 to 5 weeks after your final photo choice. We will notify you by text when the order is ready for pickup.'],
+        question: 'When can I choose the concept and how many different concepts do you have?',
+        answer: [
+          'You can choose your concept on photo shoot day. We recommend you arrive on time.',
+          'We have more than 20 different concepts, and also we can style with various props.',
+        ],
       },
     ],
   },
 ];
+
+
