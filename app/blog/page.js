@@ -13,18 +13,18 @@ export default function BlogPage() {
       <section className="container section-gap blog-list">
         {blogPosts.map((post) => (
           <article key={post.slug} id={post.slug} className="content-card blog-card">
-            <Link href={`/${post.slug}`} className="blog-card-image">
+            <Link href={`/blog/${post.slug}`} className="blog-card-image">
               <img src={post.image ?? "/assets/about-hero.jpg"} alt={post.imageAlt ?? post.title} />
             </Link>
             <p className="blog-category">Blog</p>
             <h2>
-              <Link href={`/${post.slug}`}>{post.title}</Link>
+              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
             </h2>
             <p className="blog-meta">
               {post.date} by {post.author}
             </p>
             <p>{post.excerpt}</p>
-            <Link href={`/${post.slug}`} className="button-link">
+            <Link href={`/blog/${post.slug}`} className="button-link">
               Read More
             </Link>
           </article>

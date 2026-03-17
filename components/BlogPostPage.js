@@ -25,13 +25,13 @@ export function BlogPostPage({ post, allPosts }) {
 
         <nav className="blog-post-nav">
           {previousPost ? (
-            <Link href={`/${previousPost.slug}`} className="content-card blog-post-nav-card">
+            <Link href={`/blog/${previousPost.slug}`} className="content-card blog-post-nav-card">
               <span>Previous Post</span>
               <strong>{previousPost.title}</strong>
             </Link>
           ) : <div />}
           {nextPost ? (
-            <Link href={`/${nextPost.slug}`} className="content-card blog-post-nav-card align-right">
+            <Link href={`/blog/${nextPost.slug}`} className="content-card blog-post-nav-card align-right">
               <span>Next Post</span>
               <strong>{nextPost.title}</strong>
             </Link>

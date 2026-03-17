@@ -270,7 +270,7 @@ export function buildBlogPostMetadata(post) {
   return buildMetadata({
     title,
     description,
-    canonical: `/${post.slug}/`,
+    canonical: `/blog/${post.slug}/`,
     image: post.image || defaultOpenGraphImage,
     type: "article",
     publishedTime: post.date,
@@ -291,3 +291,4 @@ export function buildGalleryMetadata(gallery) {
     })
   );
 }
+

@@ -25,7 +25,7 @@ export default function sitemap() {
 
   for (const post of blogPosts) {
     items.push({
-      url: `${siteUrl}/${post.slug}`,
+      url: `${siteUrl}/blog/${post.slug}`,
       lastModified: new Date(post.modified || post.date),
     });
   }
