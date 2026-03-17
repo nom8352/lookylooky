@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { PageHero } from "../../../components/PageHero";
+import { GalleryLightbox } from "../../../components/GalleryLightbox";
 import { galleryCategories } from "../../../data/siteData";
 
 export function generateStaticParams() {
@@ -46,18 +47,7 @@ export default async function GalleryDetailPage({ params }) {
       </section>
 
       <section className="container section-gap">
-        <div className="wall-grid">
-          {gallery.images.map((image, index) => (
-            <figure key={image.src + index} className="wall-entry">
-              <a className="wall-thumbnail" href={image.href ?? image.src} target="_blank" rel="noreferrer">
-                <img src={image.src} alt={image.alt} />
-                <span className="wall-mask">
-                  <span className="wall-mask-icon">+</span>
-                </span>
-              </a>
-            </figure>
-          ))}
-        </div>
+        <GalleryLightbox images={gallery.images} />
       </section>
     </>
   );
