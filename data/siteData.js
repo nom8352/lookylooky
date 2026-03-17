@@ -115,10 +115,11 @@ export const homeFaqs = [
   {
     question: 'Choose the Best Family Photography Studio in Sydney',
     answer: [
-      'The best family photography happens when everybody feels relaxed and happy. We always recommend choosing a studio that knows how to keep young children comfortable so genuine smiles and natural expressions can be captured.',
-      'Natural light and the softer tones of late afternoon can create beautiful family portraits, especially when combined with a simple concept and styling that does not distract from your family.',
-      'Children do not need to stay still or pose perfectly for every image. Some of the best photographs happen when kids can be themselves and interact naturally with parents and siblings.',
-      'Our photographers use manual exposure and the latest photography tools to make sure your family photos are beautifully balanced, timeless, and full of warmth.',
+      'LOOKYLOOKY has the best family photography experts. To help prepare for your family photography session in Sydney, we offer the following tips to capture the best photos.',
+      'It\'s recommended that all family members be cheery during your family photo session. If your family is unhappy or not concentrating on the camera, even the best camera equipment won\'t improve the moment. Think of ways to liven up the atmosphere, as it\'s important that your family are happy and having fun, so the photographer can capture your family\'s best moments together. Facial expressions are everything and can help to add value to your treasured photographs.',
+      'The best time for your family photography session, in natural surroundings, is late evening about an hour before dusk. Don\'t worry about your kids being rambunctious. Let them make the funny noises, sing, or dance. Let them act out their natural instincts. Let the family assume natural positions that make them feel comfortable.',
+      'We pride ourselves on being the best family photography experts in Sydney. Our preferred method of shooting is in manual exposure mode. We stay up-to-date on the latest and best photography tools and equipment.',
+      'If you feel that it\'s time to capture your family\'s special moments on film, please contact LookyLooky family photography experts in Sydney today.',
     ],
   },
 ];
@@ -278,5 +279,6 @@ export const faqCategories = [
     ],
   },
 ];
+
 
 
