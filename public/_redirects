@@ -1,3 +1,5 @@
+/blog/here /blog 301
+/blog/here/* /blog/:splat 301
 /olivia-singh-lookylooky-photography /blog/olivia-singh-lookylooky-photography 301
 /sarah-photography /blog/sarah-photography 301
 /sarah-photography-2 /blog/sarah-photography-2 301
