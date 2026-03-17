@@ -6,6 +6,11 @@ import { defaultMetadata, siteUrl } from "../data/seo";
 export const metadata = {
   metadataBase: new URL(siteUrl),
   ...defaultMetadata,
+  icons: {
+    icon: "/logo_lookylooky.png",
+    shortcut: "/logo_lookylooky.png",
+    apple: "/logo_lookylooky.png",
+  },
 };
 
 export default function RootLayout({ children }) {
