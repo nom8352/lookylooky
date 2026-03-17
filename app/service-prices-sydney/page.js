@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { PageHero } from "../../components/PageHero";
 import { priceNavItems } from "../../data/contentPages";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "Service & Prices | Photography Sydney",
-};
+export const metadata = staticPageSeo.prices;
 
 export default function ServicePricesIndexPage() {
   return (

@@ -7,12 +7,9 @@ import {
   promoCards,
   serviceHighlights,
 } from "../data/siteData";
+import { staticPageSeo } from "../data/seo";
 
-export const metadata = {
-  title: "Newborn photography Sydney | Baby photography Sydney | baby photo",
-  description:
-    "LookyLooky Photography Studio Sydney home page recreated in Next.js with local imagery and original-inspired content.",
-};
+export const metadata = staticPageSeo.home;
 
 export default function HomePage() {
   return (

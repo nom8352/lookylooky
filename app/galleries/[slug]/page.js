@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { PageHero } from "../../../components/PageHero";
 import { GalleryLightbox } from "../../../components/GalleryLightbox";
 import { galleryCategories } from "../../../data/siteData";
+import { buildGalleryMetadata } from "../../../data/seo";
 
 export function generateStaticParams() {
   return galleryCategories.map((gallery) => ({ slug: gallery.slug }));
@@ -14,10 +15,7 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  return {
-    title: `${gallery.title} | LookyLooky Photography`,
-    description: gallery.description,
-  };
+  return buildGalleryMetadata(gallery);
 }
 
 export default async function GalleryDetailPage({ params }) {

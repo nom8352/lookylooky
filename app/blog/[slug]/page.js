@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageHero } from "../../../components/PageHero";
 import { blogPosts } from "../../../data/contentPages";
+import { buildBlogPostMetadata, staticPageSeo } from "../../../data/seo";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -12,10 +13,10 @@ export async function generateMetadata({ params }) {
   const post = blogPosts.find((entry) => entry.slug === slug);
 
   if (!post) {
-    return { title: "Blog" };
+    return staticPageSeo.blog;
   }
 
-  return { title: `${post.title} - Lookylooky photography` };
+  return buildBlogPostMetadata(post);
 }
 
 export default async function BlogDetailPage({ params }) {

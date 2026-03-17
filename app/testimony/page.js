@@ -1,9 +1,8 @@
 import { PageHero } from "../../components/PageHero";
 import { testimonies } from "../../data/contentPages";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "Testimony | Photography Sydney",
-};
+export const metadata = staticPageSeo.testimony;
 
 export default function TestimonyPage() {
   return (

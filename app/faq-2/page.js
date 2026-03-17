@@ -1,10 +1,9 @@
 import { FaqAccordion } from "../../components/FaqAccordion";
 import { PageHero } from "../../components/PageHero";
 import { faqCategories } from "../../data/siteData";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "FAQ | LookyLooky Photography",
-};
+export const metadata = staticPageSeo.faq;
 
 export default function FaqPage() {
   return (

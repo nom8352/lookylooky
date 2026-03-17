@@ -1,8 +1,7 @@
 import { PageHero } from "../../components/PageHero";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "Road Closure - Lookylooky photography",
-};
+export const metadata = staticPageSeo.roadClosure;
 
 export default function RoadClosurePage() {
   return (

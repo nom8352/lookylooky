@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageHero } from "../../../components/PageHero";
 import { priceNavItems, pricePages } from "../../../data/contentPages";
+import { pricePageSeo, staticPageSeo } from "../../../data/seo";
 
 export function generateStaticParams() {
   return Object.keys(pricePages).map((slug) => ({ slug }));
@@ -12,10 +13,10 @@ export async function generateMetadata({ params }) {
   const page = pricePages[slug];
 
   if (!page) {
-    return { title: 'Service & Prices' };
+    return staticPageSeo.prices;
   }
 
-  return { title: page.title };
+  return pricePageSeo[slug] ?? { title: page.title };
 }
 
 export default async function ServicePriceDetailPage({ params }) {
@@ -32,7 +33,7 @@ export default async function ServicePriceDetailPage({ params }) {
         image={page.posterOnly ?? page.media?.[0] ?? "/assets/about-hero.jpg"}
         alt={page.heroTitle}
         title={page.heroTitle}
-        subtitle={page.subtitle ?? 'Service & Prices'}
+        subtitle={page.subtitle ?? "Service & Prices"}
         compact
       />
 
@@ -42,7 +43,7 @@ export default async function ServicePriceDetailPage({ params }) {
             <Link
               key={item.slug}
               href={`/service-prices-sydney/${item.slug}`}
-              className={item.slug === slug ? 'active' : ''}
+              className={item.slug === slug ? "active" : ""}
             >
               {item.label}
             </Link>

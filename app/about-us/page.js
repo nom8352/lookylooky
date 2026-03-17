@@ -1,4 +1,5 @@
 import { PageHero } from "../../components/PageHero";
+import { staticPageSeo } from "../../data/seo";
 
 const studioColumns = [
   {
@@ -20,9 +21,7 @@ const studioColumns = [
   },
 ];
 
-export const metadata = {
-  title: "About Us | LookyLooky Photography",
-};
+export const metadata = staticPageSeo.about;
 
 export default function AboutUsPage() {
   return (

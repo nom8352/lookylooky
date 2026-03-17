@@ -1,8 +1,7 @@
 import { PageHero } from "../../components/PageHero";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "Contact Us | LookyLooky Photography",
-};
+export const metadata = staticPageSeo.contact;
 
 const hours = [
   ["Monday", "10AM - 5PM"],

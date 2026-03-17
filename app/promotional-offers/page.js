@@ -1,10 +1,9 @@
 import { OffersTabs } from "../../components/OffersTabs";
 import { PageHero } from "../../components/PageHero";
 import { promotionalOffers } from "../../data/siteData";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "Promotional Offers | LookyLooky Photography",
-};
+export const metadata = staticPageSeo.promotionalOffers;
 
 export default function PromotionalOffersPage() {
   return (

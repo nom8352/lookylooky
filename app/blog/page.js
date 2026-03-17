@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { PageHero } from "../../components/PageHero";
 import { blogPosts } from "../../data/contentPages";
+import { staticPageSeo } from "../../data/seo";
 
-export const metadata = {
-  title: "Best Photography Ideas - Lookylooky Photography Sydney",
-};
+export const metadata = staticPageSeo.blog;
 
 export default function BlogPage() {
   return (

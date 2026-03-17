@@ -1,11 +1,11 @@
 import "./globals.css";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
+import { defaultMetadata, siteUrl } from "../data/seo";
 
 export const metadata = {
-  title: "LookyLooky Photography",
-  description:
-    "Newborn photography Sydney, baby photography Sydney, maternity and family photography recreated as a Next.js site.",
+  metadataBase: new URL(siteUrl),
+  ...defaultMetadata,
 };
 
 export default function RootLayout({ children }) {
