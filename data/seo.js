@@ -263,16 +263,20 @@ export const galleryPageSeo = {
 };
 
 export function buildBlogPostMetadata(post) {
+  const title = post.seoTitle || `${post.title} - Lookylooky photography`;
+  const description = post.seoDescription || post.excerpt || post.title;
+  const keywords = [post.focusKeyword, post.title].filter(Boolean);
+
   return buildMetadata({
-    title: `${post.title} - Lookylooky photography`,
-    description: post.excerpt,
-    canonical: `/blog/${post.slug}/`,
-    image: post.image,
+    title,
+    description,
+    canonical: `/${post.slug}/`,
+    image: post.image || defaultOpenGraphImage,
     type: "article",
-    publishedTime: post.publishedTime,
-    modifiedTime: post.modifiedTime,
-    authors: [post.author],
-    keywords: [post.category, post.title],
+    publishedTime: post.date,
+    modifiedTime: post.modified,
+    authors: [post.author || "mangiun noh"],
+    keywords,
   });
 }
 

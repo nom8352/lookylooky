@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { recentBlogLinks } from "../data/contentPages";
+import { recentBlogLinks } from "../data/blogData";
 
 const footerImages = [
   "/assets/footer-1.jpg",
